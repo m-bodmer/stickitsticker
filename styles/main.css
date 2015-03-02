@@ -1,0 +1,11 @@
+/* You have the power to do anything! */
+
+/* Some rules:
+- Overriding styles makes it harder to debug. Avoid
+- Let styles be inherited, dont duplicate
+- Keep properties terse
+- Favor transitions over animations
+*/
+* {
+  box-sizing: border-box;
+}
