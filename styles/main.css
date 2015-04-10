@@ -1,11 +1,78 @@
-/* You have the power to do anything! */
-
-/* Some rules:
-- Overriding styles makes it harder to debug. Avoid
-- Let styles be inherited, dont duplicate
-- Keep properties terse
-- Favor transitions over animations
-*/
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  ul li {
+    margin: 0; }
+
+h1, h2, p {
+  font-weight: 200; }
+
+.header {
+  height: 66px;
+  background-color: #2C3135;
+  position: relative; }
+  .header .header--logo {
+    float: left;
+    max-width: 150px;
+    height: 65px; }
+  .header .header--nav {
+    display: block;
+    float: right;
+    width: 180px;
+    text-transform: uppercase;
+    margin: 0 5% 0 0; }
+    .header .header--nav a {
+      white-space: nowrap;
+      display: inline-block;
+      float: left;
+      width: 43%;
+      text-decoration: none;
+      color: #FAFAFA; }
+      .header .header--nav a:hover {
+        color: #EA6865; }
+
+.page-container {
+  height: 100%; }
+
+section {
+  background-color: #72AE7A;
+  min-height: 300px;
+  padding: 5%;
+  color: #FDFDFC;
+  text-align: center; }
+
+section:nth-child(even) {
+  background-color: #FDFDFC;
+  color: #232321; }
+
+.why--details {
+  margin: 8% 0 0 0;
+  overflow: hidden; }
+  .why--details .why--details__list {
+    float: left; }
+    .why--details .why--details__list li {
+      float: left;
+      width: 49%; }
+      .why--details .why--details__list li div {
+        height: 50px;
+        width: 50px;
+        border: 1px solid black;
+        margin: 0 auto; }
+
+.order-now button {
+  background-color: #EA6865;
+  border: none;
+  padding: 3% 2% 2% 2%; }
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%); }
+
+/*# sourceMappingURL=main.css.map */

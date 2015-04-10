@@ -1,21 +1,83 @@
 <html lang=en>
 <head>
-    <meta charset="utf-8">
-    <title>Basic Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Basic Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
-    <!-- Seperate into two stylesheets if needed to get the percieved page load time up -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main.css">
+  <!-- CSS -->
+  <!-- Seperate into two stylesheets if needed to get the percieved page load time up -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <h1>A new page</h1>
+  <header class="header">
+    <div class="header--logo"><img src="http://placehold.it/150x65" alt="Stickers for your sticker"></div>
 
-    <!-- Scripts -->
-    <script src="http://code.jquery.com/jquery.min.js"></script>
-    <!-- Replace XXXXXX.js with script needed, otherwise delete
-    <script src="js/XXXXXX.js"></script>
-    -->
+    <ul class="header--nav vertical-center">
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>Order Now</li></a>
+    </ul>
+  </header>
+
+  <div class="page-container">
+    <section class="intro">
+      <div class="intro--desc">
+        <h1>A product for your products</h1>
+        <p>Never worry about your products for your product again</p>
+      </div>
+    </section>
+    <section class="why">
+      <div class="why--desc">
+        <h2>Why?</h2>
+      </div>
+      <div class="why--details">
+        <ul class='why--details__list'>
+          <li class="why--details--reason-1">
+            <div class="reason-1-image"></div>
+            <p>One reason for why you should buy this product</p>
+          </li>
+          <li class="why--details--reason-2">
+            <div class="reason-2-image"></div>
+            <p>Another reason for why you should buy this product</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="order-now">
+      <div>
+        <h2>Order one now</h2>
+        <p>Only 10$ plus shipping</p>
+      </div>
+      <div>
+        <button data-celery="55277f52da56780800ba56ec" data-celery-version="v2">Checkout</button>
+      </div>
+    </section>
+    <section>
+      <ul>
+        <li>
+          <p>FAQ 1 ></p>
+          <p>FAQ 1 ANSWER</p>
+        </li>
+        <li>
+          <p>FAQ 2 ></p>
+          <p>FAQ 2 ANSWER</p>
+        </li>
+        <li>
+          <p>FAQ 3 ></p>
+          <p>FAQ 3 ANSWER</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+
+  <script async type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>
+
+  <!-- Scripts -->
+  <!-- <script src="http://code.jquery.com/jquery.min.js"></script>  -->
+  <!-- Replace XXXXXX.js with script needed, otherwise delete
+  <script src="js/XXXXXX.js"></script>
+  -->
+
 </body>
 </html>
