@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- CSS -->
-  <!-- Seperate into two stylesheets if needed to get the percieved page load time up -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
   <header class="header">
-    <div class="header--logo"><img src="http://placehold.it/150x65" alt="A sticker for your sticker"></div>
+    <div class="header--logo"><img src="styles/img/logo.png" data-at2x="styles/img/logo@2x.png" alt="A sticker for your sticker"></div>
 
     <div class="header--nav vertical-center">
-      <a href="#">Preorder Now</a>
+      <a href="https://shop.trycelery.com/page/stickitsticker" target="_blank">Preorder Now</a>
     </div>
   </header>
 
@@ -22,8 +21,8 @@
     <section class="intro">
       <div class="intro--desc">
         <h1>A sticker for your stickers</h1>
-        <p>Place your stickers on top of StickOnIt, and easily peel off everything in one go.</p>
-        <img src="http://placehold.it/300x140">
+        <p>Place your stickers on top of StickItSticker, and easily peel off everything in one go.</p>
+        <img src="styles/img/Group.png" data-at2x="styles/img/Group@2x.png">
       </div>
     </section>
     <section class="why">
@@ -33,11 +32,11 @@
       <div class="why--details">
         <ul class='why--details__list'>
           <li class="why--details--reason-1">
-            <div class="reason-1-image"></div>
-            <p>Selling or returning your laptop to someone? With StickOnIt, there is no gooey, sticky mess to clean up afterwards. Peel off StickOnIt and you are good to go.</p>
+            <img src="styles/img/cleaning.png" class="reason-1-image">
+            <p>Selling or returning your laptop to someone? With StickItSticker, there is no gooey, sticky mess to clean up afterwards.</p>
           </li>
           <li class="why--details--reason-2">
-            <div class="reason-2-image"></div>
+            <img src="styles/img/sll.png" class="reason-2-image">
             <p>Carry over your stickers to a new laptop so you don't lose that massive sticker collection of yours.</p>
           </li>
         </ul>
@@ -46,7 +45,7 @@
     <section class="order-now">
       <div>
         <h2>Preorder one now</h2>
-        <h3>10$ plus shipping</h3>
+        <h3>10$ USD plus shipping</h3>
         <p>Preorders so far: 0 / 100</p>
         <p class="faded">Orders will ship once 100 preorders have been made.</p>
       </div>
@@ -77,7 +76,18 @@
   <script async type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>
 
   <!-- Scripts -->
-  <!-- <script src="http://code.jquery.com/jquery.min.js"></script>  -->
   <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/retina.min.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-61910878-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </body>
 </html>
